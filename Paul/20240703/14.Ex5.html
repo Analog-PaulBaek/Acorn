@@ -6,35 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex5</title>
     <style>
-        div{
+        div {
             border: solid 1px;
             width: 300px;
             height: 130px;
         }
-        h3{
+
+        h3 {
             text-align: center;
         }
-        p{
+
+        p {
             text-align: justify;
             margin: 15px;
         }
-        .univers{
+
+        .univers {
             width: 300px;
             height: 200px;
             border-top-left-radius: 15%;
             border-top-right-radius: 15%;
             background-color: lightgreen;
         }
-        .threeDEffect{
+
+        .threeDEffect {
             color: whitesmoke;
             text-shadow: 2px 2px 4px black;
         }
-        .galaxy{
+
+        .galaxy {
             background-color: greenyellow;
         }
-        .multiEffect{
+
+        .multiEffect {
             color: yellow;
             text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 250px;
+            margin: auto;
+            background-color: aliceblue;
+        }
+        thead{
+            background-color: gray;
+        }
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        .speed {
+            border-bottom-left-radius: 15%;
+            border-bottom-right-radius: 15%;
+            background-color: yellow;
         }
     </style>
 </head>
@@ -53,16 +79,26 @@
 
         <p>은하는 우주를 구성하고 있는 단위의 <br>
             하나로, 수천억 개 이상의 별</p>
-    </div>
+    </div> <br>
     <div class="speed">
         <table border="1">
-            <tr>
-                <th>행성</th>
-                <th>탈출속력 <sub>(km/s)</sub></th>
-            </tr>
+            <thead>
+                <tr>
+                    <th>행성</th>
+                    <th>탈출속력 <sub>(km/s)</sub></th>
+                </tr>
+            </thead>
             <tr>
                 <td>수성</td>
                 <td>4.3</td>
+            </tr>
+            <tr>
+                <td>금성</td>
+                <td>10.3</td>
+            </tr>
+            <tr>
+                <td>지구</td>
+                <td>11.2</td>
             </tr>
         </table>
     </div>
