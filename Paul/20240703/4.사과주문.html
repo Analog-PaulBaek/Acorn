@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 650px;
+            /* border: solid 1px blue; */
+        }
+        img{
+            width: 300px; /*가로사이즈*/
+            height: 300px; /*세로사이즈*/
+            
+        }
+        .container{
+            width: 650px;
+            border: solid 1px red;
+            text-align: center;
+         }
+        h1{
+            background-color: black;
+            color: aliceblue;
+            font-size: 16px;
+            padding: 7px; /*안쪽 여백*/
+            text-align: left;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+         }
+         a:hover{ /*마우스 올렸을 때*/
+            color: rgb(87, 165, 190);
+            text-decoration: underline;
+         }
+         
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <img src="data:image/jpeg;base64,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"
+            alt="사과">
+        <div class="container">
+        <h1>확인 사항</h1>
+        <a href="#">
+            <h2>주문 및 배송</h2>
+        </a>
+        <p>오후 2시 이전 주문 건은 당일 발송합니다 <br>
+            2시 이후 주문건은 다음날 발송합니다 (주말 제외)</p>
+        <hr>
+        <a href="#">
+            <h2>교환 및 환불</h2>
+        </a>
+        <p>불만족시 100% 환불해 드립니다 <br>
+            고객센터로 전화주세요</p>
+        <hr>
+        <a href="#">
+            <h2>고객센터</h2>
+        </a>
+        <p>0000-0000<br>
+            상담시간 : 오전 9시~오후6시 (토/일, 공휴일 휴무)</p>
+        </div>
+    </div>
+</body>
+
+</html>
