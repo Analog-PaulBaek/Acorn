@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matrix</title>
+    <style>
+        #wrap{
+            text-align: center;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: cadetblue;
+            font-size: 30px;
+            line-height: 300px;
+            margin: 100px auto;
+            color: salmon;
+        }
+        label, input{
+            display: inline-block;
+            cursor: pointer;
+        }
+        label:hover{
+            color: blue;
+            transform: scale(1.05);
+        }
+        /* martix(scaleX(), skewY(), skewX(), scaleY(),
+        translateX(), translateY () ) */
+        #martixDefault:checked~ ,box{
+            transform: matrix(1,0,0,1,0,0);
+        }
+        #martixScale:checked~ .box{
+            transform: matrix(1.5,0,0,1.5,0,0);
+        }
+        #martixSkew:checked~ .box{
+            transform: matrix(1,1.2,0.5,1,0,0);
+        }
+        #martixTranslate:checked~ .box{
+            transform: matrix(1,0,0,1,300,200);
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <input type="radio" name="matrix" id="martixDefault" value="martixDefault">
+        <label for="martixDefault">martixDefault(초기화)</label> <!--카멜표기법-->
+
+        <input type="radio" name="matrix" id="martixScale" value="martixScale">
+        <label for="martixScale">martixScale(줌효과)</label>
+
+        <input type="radio" name="matrix" id="martixSkew" value="matrixSkew">
+        <label for="martixSkew">martixSkew(기울기효과)</label>
+
+        <input type="radio" name="matrix" id="martixTranslate" value="martixTranslate">
+        <label for="martixTranslate">martixTranslate(이동효과)</label>
+
+        <div class="box"> matrix </div>
+    </div>
+</body>
+</html>

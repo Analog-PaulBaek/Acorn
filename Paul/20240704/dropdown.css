@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 헤더부분 시작 */
+#head{
+    background-color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+}
+ul{
+    text-decoration: none;
+    text-align: center;
+    color: gray;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    list-style: none;
+    position: relative;
+    
+}
+ul:hover{
+    color: lightblue;
+    
+}
+ul:hover li a{
+    display: block;
+    color: lightblue;
+    
+}
+li{
+    height: 15px;
+    width: 70px;
+}
+li a{
+    display: none;
+    text-decoration: none;
+    text-align: center;
+    color: gray;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    position: absolute;
+}
+li a:hover{
+    background-color: lightgrey;
+    background-color: lightgray;
+   
+    
+}
+.logo{
+    margin-left: 20px;
+}
+.logo img{
+    width: 60px;
+    
+}
+.menu{
+    display: flex;
+}
+/* 메인부분 시작*/
+main{
+    background-image: url(../images/블루보틀\ 백그라운드.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+h2{
+    position: relative;
+    top: 300px;
+    left: 45px;
+    font-size: 1em;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ment{
+    position: relative;
+    top: 295px;
+    left: 38px;
+    font-size: 3em;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    position: relative;
+    top: 300px;
+    left: 45px;
+    background-color: #01a1dd;
+    cursor: pointer;
+    padding: 5px 24px;
+    color: whitesmoke;
+    border: 0;
+    font-weight: 400;
+}
+footer{
+    color: gray;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 14px; /*폰트어썸 아이콘 같이 조절*/
+    padding: 10px 50px;
+}
+
+/* 아이콘을 이미지로 한 경우footer img {
+    width: 20px;
+} */
